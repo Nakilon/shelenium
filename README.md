@@ -2,7 +2,14 @@
 
 ## Why
 
-It is easy to automate applications that print to STDOUT and STDERR in a straight-forward way, but how to deal with fancy dialogs of tty-prompt and cli-ui? Or how to know what user sees in a Nethack game session?
+It is easy to automate applications that print to STDOUT and STDERR in a straight-forward way.  
+But how to deal with fancy dialogs of tty-prompt and cli-ui?
+
+![image](https://user-images.githubusercontent.com/2870363/139074705-764b1dce-1a4a-441c-8e56-135d33f9457d.png)
+
+Or how to know what user sees in an ASCII graphics game session?
+
+![image](https://user-images.githubusercontent.com/2870363/139074243-11b58cf0-dd14-439b-a9ff-6b663e5416f5.png)
 
 Shelenium is a tool that provides an interface to shell session as simple as a two-dimensional array of currently shown characters. It is also cross-platform and does not depend on any proprietary terminal emulators.
 
@@ -21,6 +28,8 @@ gem "ferrum", github: "nakilon/ferrum"
 ```
 
 to fix [the bug](https://github.com/rubycdp/ferrum/issues/203) otherwise the terminal area does not fit into the browser window.
+
+Colors are not supported yet.
 
 ## Examples
 
@@ -50,4 +59,4 @@ It will launch Chrome and in few seconds you'll see the example result of the `S
 
 It descends to lower levels and activates the torch. Opening the doors and going through enemies is not implemented.
 
-You can find there the second thread that when activated continuously dumps the screen to a [JSONL](https://en.wikipedia.org/wiki/JSON_streaming) file that can then be converted to [ttyrec](https://en.wikipedia.org/wiki/Ttyrec) to be played with usual tools or to be embedded in HTML [like this](https://unsteadyhoneydewrelationalmodel.nakilon.repl.co/).
+You can find there the second thread that when activated continuously dumps the screen to a [JSONL](https://en.wikipedia.org/wiki/JSON_streaming) file that can then be converted to [ttyrec](https://en.wikipedia.org/wiki/Ttyrec) to be played with usual tools or to be embedded in HTML [like this](https://unsteadyhoneydewrelationalmodel.nakilon.repl.co/) (you saw the screenshot of it in the beginning of this README).
