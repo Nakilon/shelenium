@@ -1,4 +1,6 @@
 source "https://rubygems.org"
 
 gem "ferrum", github: "nakilon/ferrum"
-gem "shelenium", path: "../.."
+gem "shelenium"
+
+gem "byebug"

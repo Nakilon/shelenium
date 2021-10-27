@@ -1,0 +1,10 @@
+run and record 'rec.jsonl': $ bundle exec ruby main.rb
+compact: $ ruby compact.rb < rec.jsonl > compact.jsonl
+convert to 'rec.ttyrec': $ ruby jsonl2ttyrec.rb < compact.jsonl
+
+to replay frame by frame
+  $ brew install ipbt
+  $ ipbt rec.ttyrec
+to replay with utf-8
+  $ brew install termrec
+  $ clear && termplay rec.ttyrec
