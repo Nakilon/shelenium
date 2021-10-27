@@ -1,0 +1,2 @@
+gem "ferrum", github: "nakilon/ferrum"
+gem "ttylenium", path: "../.."

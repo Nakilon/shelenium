@@ -1,0 +1,38 @@
+GIT
+  remote: https://github.com/nakilon/ferrum.git
+  revision: e085282a404feb56f2746884e32b7bf481b2a51b
+  specs:
+    ferrum (0.11)
+      addressable (~> 2.5)
+      cliver (~> 0.3)
+      concurrent-ruby (~> 1.1)
+      websocket-driver (>= 0.6, < 0.8)
+
+PATH
+  remote: ../..
+  specs:
+    ttylenium (0.0.0)
+      ferrum
+      rubyzip
+
+GEM
+  specs:
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    cliver (0.3.2)
+    concurrent-ruby (1.1.9)
+    public_suffix (4.0.6)
+    rubyzip (1.3.0)
+    websocket-driver (0.7.5)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ferrum!
+  ttylenium!
+
+BUNDLED WITH
+   2.1.4
