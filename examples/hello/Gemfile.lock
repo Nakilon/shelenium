@@ -11,7 +11,7 @@ GIT
 PATH
   remote: ../..
   specs:
-    ttylenium (0.0.0)
+    shelenium (0.0.0)
       ferrum
       rubyzip
 
@@ -32,7 +32,7 @@ PLATFORMS
 
 DEPENDENCIES
   ferrum!
-  ttylenium!
+  shelenium!
 
 BUNDLED WITH
    2.1.4
