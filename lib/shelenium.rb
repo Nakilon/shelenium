@@ -1,4 +1,4 @@
-module TTYlenium
+module Shelenium
 
   @@browser
   def self.new
@@ -42,7 +42,7 @@ module TTYlenium
     @@browser.go_to "chrome-extension://iodihamcpbpeioajjeobimgagajmlibd/html/nassh.html##{ENV.fetch "USER"}@localhost"
     wait_to_find_xpath.call("//*[*[contains(text(),'fingerprint')]]//input"){ @@browser.frames.last }.type("yes\n")
     @@browser.execute "window.removeEventListener('beforeunload', nassh_.onBeforeUnload_)"
-    wait_to_find_xpath.call("//*[*[contains(text(),'Password')]]//input"){ @@browser.frames.last }.type("#{ENV.fetch "TTYLENIUM_PASSWORD"}\n")
+    wait_to_find_xpath.call("//*[*[contains(text(),'Password')]]//input"){ @@browser.frames.last }.type("#{ENV.fetch "SHELENIUM_PASSWORD"}\n")
     @@browser.keyboard.type "cd #{Shellwords.escape File.expand_path dir}\n"
   end
 
