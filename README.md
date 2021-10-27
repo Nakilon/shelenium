@@ -24,6 +24,7 @@ $  SHELENIUM_PASSWORD=... bundle exec ruby main.rb
 
 It will launch Chrome and in few seconds you'll see the example result of the `Shelenium.get_current_lines` call printed, ending with prompt:
 
+```none
 ["Welcome to \"Secure Shell\" version 0.43.",
  ...
  "naki:~ nakilon$ cd /Users/nakilon/.ssh",
@@ -38,4 +39,4 @@ Note: use the fork of Ferrum:
 gem "ferrum", github: "nakilon/ferrum"
 ```
 
-to fix [the bug](https://github.com/rubycdp/ferrum/issues/203).
+to fix [the bug](https://github.com/rubycdp/ferrum/issues/203) otherwise the terminal area does not fit into the browser window.
